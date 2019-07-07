@@ -4,8 +4,15 @@
 int main(){
     using namespace std;
 
-    cout << "Helllo VScode!" << endl;
+    double f;
+    double div;
+    const auto rTick = M_PI / 128; 
+    const auto nLP = 256;
 
-// 0123456789 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ
-// あいうえお東京都神奈川県
+    for (auto i=0; i<nLP; ++i){
+      div = i * rTick;
+      f = sin( div );
+      cout << "sin(" << div << ") = " << f << endl;
+    }
+
 }
